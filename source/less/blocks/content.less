@@ -1,0 +1,120 @@
+.content__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content__text {
+  text-align: left;
+}
+
+.services-slider-navigation {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .header-title {
+    color: #164d90;
+    font-size: 19px;
+    font-weight: lighter;
+    position: relative;
+    margin-left: 20px;
+    text-align: left;
+
+  }
+
+  .slide-service {
+    display: none;
+  }
+
+  .container {
+    width: 768px;
+    margin: 0 auto;
+
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    border: 3px solid @plashka-off;
+    ;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  .services-slider-navigation {
+    display: block;
+  }
+
+  #services-slide-1:checked~.content #slide-1,
+  #services-slide-2:checked~.content #slide-2,
+  #services-slide-3:checked~.content #slide-3,
+  #services-slide-4:checked~.content #slide-4,
+  #services-slide-5:checked~.content #slide-5 {
+    display: block;
+  }
+
+  #services-slide-1:checked~.content label[for="services-slide-1"],
+  #services-slide-2:checked~.content label[for="services-slide-2"],
+  #services-slide-3:checked~.content label[for="services-slide-3"],
+  #services-slide-4:checked~.content label[for="services-slide-4"],
+  #services-slide-5:checked~.content label[for="services-slide-5"] {
+    background-color: @plashka-on;
+    color: @text-color;
+  }
+
+  .content__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  .content__img {
+    margin-left: 40px;
+
+  }
+
+  .content__text {
+    margin: 0;
+    width: 417px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 990px;
+    margin: 0 auto;
+  }
+
+  .content__img {
+    margin-left: 10px;
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    border: 3px solid @plashka-off;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .content__text {
+    margin: 0;
+    width: 565px;
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+}

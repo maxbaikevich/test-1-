@@ -1,0 +1,38 @@
+.header__title {
+    color: #164d90;
+    font-size: 19px;
+  
+    position: relative;
+    text-align: center;
+  }
+  .header__title::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 22px;
+    background-color: #104f96;
+    left: 0px;
+  }
+  
+
+@media (min-width: @tablet-width) {
+    .header {
+        margin-bottom: 30px;
+    }
+    .header__title {
+        color: #164d90;
+        font-size: 19px;
+        font-weight: lighter;
+        position: relative;
+        margin-left: 20px;
+        text-align: left;
+      }
+      .header__title::before {
+        position: absolute;
+        content: "";
+        width: 7px;
+        height: 22px;
+        background-color: #104f96;
+        left: -20px;
+      }
+}

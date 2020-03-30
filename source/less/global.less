@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Verdana Regular';
+    src: url('Verdana.eot');
+    src: url('Verdana.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Verdana.woff') format('woff'),
+    url('Verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana Regular';
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: normal;
+    color: @text-color;
+  }
+  .container {
+    width: 360px;
+    margin: 0 auto;
+  
+  }
+  
+  .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+  
